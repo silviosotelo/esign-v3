@@ -1,6 +1,8 @@
 const crypto = require('crypto');
 const KeyRepository = require('../repositories/keyRepository');
 const DocumentKey = require('../models/keyModel');
+const cryptographicService = require('../services/cryptographicService');
+const auditService = require('../services/auditService');
 
 const ALGORITHM = {
   SIGN: 'RSA-SHA512',
@@ -83,8 +85,7 @@ function diagnoseBuffer(label, buffer) {
   console.log('--------------------------------------------');
 }
 
-// Generar y almacenar un par de claves
-exports.generateKeyPair = async (passphrase) => {
+exports.generateKeyPair = async (passphrase, userId = null) => {
   try {
     // Normalizar el passphrase para consistencia
     const normalizedPass = normalizePassphrase(passphrase);
@@ -168,6 +169,15 @@ exports.generateKeyPair = async (passphrase) => {
     console.log('Generate key pair and store in database:', result);
 
     console.log(`Claves generadas y almacenadas con keyId: ${keyId}`);
+
+    if (userId) {
+      try {
+        await auditService.logKeyGenerated(userId, keyId, null);
+      } catch (auditError) {
+        console.warn('Error registrando auditoría de generación de claves:', auditError);
+      }
+    }
+
     return { publicKey, keyId };
   } catch (error) {
     console.error('Error generando el par de claves:', error);
@@ -175,8 +185,7 @@ exports.generateKeyPair = async (passphrase) => {
   }
 };
 
-// Firmar documento
-exports.generateSignature = async (data, keyId, passphrase) => {
+exports.generateSignature = async (data, keyId, passphrase, userId = null) => {
   try {
     console.log('Contract KeyId: ', keyId);
     const keyRecord = await KeyRepository.findByKeyId(keyId);
@@ -268,8 +277,23 @@ exports.generateSignature = async (data, keyId, passphrase) => {
     const signer = crypto.createSign(ALGORITHM.SIGN);
     signer.update(data);
 
+    const signature = signer.sign(decryptedPrivateKey, 'base64');
+
+    if (userId) {
+      try {
+        await auditService.logAuditEvent({
+          action: 'KEY_USED',
+          userId,
+          details: { keyId, algorithm: ALGORITHM.SIGN },
+          severity: 'INFO'
+        });
+      } catch (auditError) {
+        console.warn('Error registrando auditoría de uso de clave:', auditError);
+      }
+    }
+
     return {
-      signature: signer.sign(decryptedPrivateKey, 'base64'),
+      signature,
       keyId,
       timestamp: Date.now()
     };
