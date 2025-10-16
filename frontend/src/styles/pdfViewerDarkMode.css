@@ -1,0 +1,14 @@
+/* styles/pdfViewerDarkMode.css */
+.pdf-viewer-dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .pdf-viewer-dark-mode .rpv-core__viewer {
+    background-color: #121212;
+  }
+  
+  .pdf-viewer-dark-mode .rpv-core__text-layer {
+    color: #ffffff;
+  }
+  

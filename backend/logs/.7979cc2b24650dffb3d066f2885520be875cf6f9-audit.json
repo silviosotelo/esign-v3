@@ -1,0 +1,50 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/soporte/apps/e-sign/backend/logs/.7979cc2b24650dffb3d066f2885520be875cf6f9-audit.json",
+    "files": [
+        {
+            "date": 1759251146953,
+            "name": "/home/soporte/apps/e-sign/backend/logs/30-09-2025.log",
+            "hash": "0e9eb790bd6ff2e59c266d8ed34b988c2dcbcbe1a183584acaeb00f00cadfbb9"
+        },
+        {
+            "date": 1759346860160,
+            "name": "/home/soporte/apps/e-sign/backend/logs/01-10-2025.log",
+            "hash": "f10603cda0dcc57caac2bab2f6ea382c4d2452ba8428c9f312dfac8cccc6f7bc"
+        },
+        {
+            "date": 1759497915495,
+            "name": "/home/soporte/apps/e-sign/backend/logs/03-10-2025.log",
+            "hash": "a312e6802dd59335c634106ef9be4a85db75a09a335123e16a38a34cf07f748e"
+        },
+        {
+            "date": 1759773183997,
+            "name": "/home/soporte/apps/e-sign/backend/logs/06-10-2025.log",
+            "hash": "23eb1a5c176801124624eac47e870563d73e940a1a28e48e8770787711d1ffd6"
+        },
+        {
+            "date": 1759870169068,
+            "name": "/home/soporte/apps/e-sign/backend/logs/07-10-2025.log",
+            "hash": "e76bf7473e72c17c440a0d013c7d12e0bafd3517b7c967858f5a24c56a836c8e"
+        },
+        {
+            "date": 1760028460575,
+            "name": "/home/soporte/apps/e-sign/backend/logs/09-10-2025.log",
+            "hash": "2ceb8ef37e6ca016edfe18730ae3060c6eb840373ed9344f57aa8dcf98ebca1a"
+        },
+        {
+            "date": 1760120445418,
+            "name": "/home/soporte/apps/e-sign/backend/logs/10-10-2025.log",
+            "hash": "0596583ffa3af623d88adfb443f65c9419f517106414b5176dd73d5a5b3d8cdf"
+        },
+        {
+            "date": 1760284775893,
+            "name": "/home/soporte/apps/e-sign/backend/logs/12-10-2025.log",
+            "hash": "ba984e37da8d99bf76b387e71afaddbbce416c1206d3d3718a380251ad6b03e1"
+        }
+    ],
+    "hashType": "sha256"
+}

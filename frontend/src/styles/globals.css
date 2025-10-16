@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Puedes agregar aquí estilos globales personalizados adicionales si lo necesitas */
+
+body {
+  @apply bg-gray-100 text-gray-900;
+  font-family: 'Inter', sans-serif; /* Utiliza una fuente moderna y legible */
+}
+
+a {
+  @apply text-blue-500 hover:text-blue-700;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-semibold;
+}
+input, button {
+  font-family: inherit; /* Mantiene la consistencia de la fuente */
+}
+

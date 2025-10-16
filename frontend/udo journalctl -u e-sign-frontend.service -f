@@ -1,0 +1,21 @@
+[0;1;32m●[0m e-sign-frontend.service - e-Sign Frontend (Next.js)
+     Loaded: loaded (/etc/systemd/system/e-sign-frontend.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Thu 2025-02-27 17:41:48 UTC; 18s ago
+   Main PID: 1207906 (npm run start)
+      Tasks: 23 (limit: 9424)
+     Memory: 134.2M
+     CGroup: /system.slice/e-sign-frontend.service
+             ├─1207906 npm run start
+             ├─1208179 sh -c next start -p 10000
+             └─1208180 next-server (v14.2.14)
+
+feb 27 17:42:00 serverwhatsapp e-sign-frontend[1207939]:   ├ chunks/pages/_app-7f4da2283e8dfc1b.js  21.9 kB
+feb 27 17:42:00 serverwhatsapp e-sign-frontend[1207939]:   └ other shared chunks (total)            4.8 kB
+feb 27 17:42:00 serverwhatsapp e-sign-frontend[1207939]: ○  (Static)  prerendered as static content
+feb 27 17:42:00 serverwhatsapp e-sign-frontend[1207906]: > e-sign-frontend@0.1.0 start
+feb 27 17:42:00 serverwhatsapp e-sign-frontend[1207906]: > next start -p 10000
+feb 27 17:42:01 serverwhatsapp e-sign-frontend[1208180]:   ▲ Next.js 14.2.14
+feb 27 17:42:01 serverwhatsapp e-sign-frontend[1208180]:   - Local:        http://localhost:10000
+feb 27 17:42:01 serverwhatsapp e-sign-frontend[1208180]:  ✓ Starting...
+feb 27 17:42:01 serverwhatsapp e-sign-frontend[1208180]:  ✓ Ready in 308ms
+feb 27 17:42:05 serverwhatsapp systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185me-sign-frontend.service: Current command vanished from the unit file, execution of the command list won't be resumed.[0m

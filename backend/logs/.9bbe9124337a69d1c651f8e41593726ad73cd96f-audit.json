@@ -1,0 +1,80 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "/home/soporte/apps/e-sign/backend/logs/.9bbe9124337a69d1c651f8e41593726ad73cd96f-audit.json",
+    "files": [
+        {
+            "date": 1757954250252,
+            "name": "/home/soporte/apps/e-sign/backend/logs/error-15-09-2025.log",
+            "hash": "cfdb2ffa22dae77fc2d374014fa112352b4fef7da386f741899200145e188c6c"
+        },
+        {
+            "date": 1758227500122,
+            "name": "/home/soporte/apps/e-sign/backend/logs/error-18-09-2025.log",
+            "hash": "31b669414f9e23bf0bdd14b0e6351b3417e9e5bd7d260064c8a7ca082499c061"
+        },
+        {
+            "date": 1758288095438,
+            "name": "/home/soporte/apps/e-sign/backend/logs/error-19-09-2025.log",
+            "hash": "adb8a6de7baf289b1f700736de28bf2266844ded8b0f57df4940ea4d1f366bb0"
+        },
+        {
+            "date": 1758540443067,
+            "name": "/home/soporte/apps/e-sign/backend/logs/error-22-09-2025.log",
+            "hash": "d2985df4c96abac8069dfdf4aeae098687eefa9a78bdb112be96ea62627429c7"
+        },
+        {
+            "date": 1758831538989,
+            "name": "/home/soporte/apps/e-sign/backend/logs/error-25-09-2025.log",
+            "hash": "246387b4991fd33dd96c817c71045a214e8f689a224da26aa99365cb49d5ed76"
+        },
+        {
+            "date": 1758884744010,
+            "name": "/home/soporte/apps/e-sign/backend/logs/error-26-09-2025.log",
+            "hash": "9d0a676e28ae09cfb53c741babe73c29d031b27ec862aa3d3ff4a667b2ad1b9b"
+        },
+        {
+            "date": 1759251147950,
+            "name": "/home/soporte/apps/e-sign/backend/logs/error-30-09-2025.log",
+            "hash": "0047a296c8dc65e591ead96dae44e860692b659919ff9cdd09c56a5dd6964ec8"
+        },
+        {
+            "date": 1759346861174,
+            "name": "/home/soporte/apps/e-sign/backend/logs/error-01-10-2025.log",
+            "hash": "b177ff99bc6e1671eeaf694f130b72e4f32b6abb1437f2c42d861180eebe0893"
+        },
+        {
+            "date": 1759497916185,
+            "name": "/home/soporte/apps/e-sign/backend/logs/error-03-10-2025.log",
+            "hash": "058f3f1d25b43b3c5b18a4c30a9fffd8593b98c90613686fa0c442c07d4444aa"
+        },
+        {
+            "date": 1759773185019,
+            "name": "/home/soporte/apps/e-sign/backend/logs/error-06-10-2025.log",
+            "hash": "06a2ba2cda87fcb8453e15d2c70bbfd62aeb917270f9065cfbea5f63ee162060"
+        },
+        {
+            "date": 1759870170057,
+            "name": "/home/soporte/apps/e-sign/backend/logs/error-07-10-2025.log",
+            "hash": "1909bc125c70e1b55ed0c413c5d6b42068abcf058e0594043c5854952581c834"
+        },
+        {
+            "date": 1760028461353,
+            "name": "/home/soporte/apps/e-sign/backend/logs/error-09-10-2025.log",
+            "hash": "673bb213160fb45ff9fc423d578003fe48ab3da5a15fa6fd514c84fb54946cbf"
+        },
+        {
+            "date": 1760120446250,
+            "name": "/home/soporte/apps/e-sign/backend/logs/error-10-10-2025.log",
+            "hash": "81d7f78a1594910d4fc8b0e8761b53e91d26eff0bb2b400c631ac7840f766401"
+        },
+        {
+            "date": 1760284776847,
+            "name": "/home/soporte/apps/e-sign/backend/logs/error-12-10-2025.log",
+            "hash": "1569072e9407717868fc0b4759abc34c60856ae4144c59dbff6bd4058b0aede4"
+        }
+    ],
+    "hashType": "sha256"
+}
